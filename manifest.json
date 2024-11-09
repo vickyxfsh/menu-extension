@@ -8,6 +8,15 @@
     "default_title": "Menu Genius",
     "default_popup": "popup.html"
   },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"]
+    }
+  ],
   "icons": {
     "16": "images/logo16.jpg",
     "32": "images/logo32.jpg",
